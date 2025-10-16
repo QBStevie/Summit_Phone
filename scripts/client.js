@@ -1,6 +1,14 @@
 import { build } from './build.js';
 import JavaScriptObfuscator from 'javascript-obfuscator';
-import { readFileSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const outputDir = resolve(__dirname, '../build');
+const outputFilePath = resolve(outputDir, 'client.js');
+
+mkdirSync(outputDir, { recursive: true });
 
 // Auto-run build
 await build({
@@ -8,12 +16,11 @@ await build({
   target: ['es2021'],
   format: 'iife',
   entryPoints: ['game/client/index.ts'],
-  outfile: '../build/client.js',
+  outfile: outputFilePath,
 })
 
 // Obfuscate the output file if not in dev mode
 if (!process.argv.includes('--dev')) {
-  const outputFilePath = '../build/client.js';
   const code = readFileSync(outputFilePath, 'utf-8');
 
   const obfuscationResult = JavaScriptObfuscator.obfuscate(code, {
