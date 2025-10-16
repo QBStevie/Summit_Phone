@@ -1,5 +1,5 @@
 import { Image } from "@mantine/core";
-import lockscreenBg from "../../../images/lockscreenBg.png";
+import lockscreenBg from "../../../images/lockscreenBG.png";
 import lockIcon from "../../../images/lockIcon.svg?url";
 import unLockIcon from "../../../images/unlockIcon.svg?url";
 import dayjs from "dayjs";
