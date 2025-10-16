@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'SFPro';
+  src: url(../fonts/SFPRODISPLAYREGULAR.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url(../fonts/SFPRODISPLAYMEDIUM.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SFPro';
+  src: url(../fonts/SFPRODISPLAYBOLD.woff2);
+  font-weight: 600;
+}
+
+:root {
+  font-family: 'SFPro', sans-serif;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.87);
+  overflow: hidden !important;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff00 !important;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: #bb010100 !important;
+  margin: 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  min-width: 320px;
+  min-height: 100.00vh;
+}
+
+.my-node-enter {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Entering Active: Slide up to the final position */
+.my-node-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 800ms, opacity 800ms;
+}
+
+/* Exiting: Start at the normal position */
+.my-node-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Exiting Active: Slide down out of view */
+.my-node-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 800ms, opacity 800ms;
+}

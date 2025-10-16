@@ -1,0 +1,2260 @@
+#root {
+  padding: 1.78vh;
+  user-select: none;
+}
+
+  .innerFrame {
+  width: 29.79vh;
+  height: 64.22vh;
+  margin-top: 0.98vh;
+  margin-left: 1.14vh;
+  border-radius: 4.41vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  /* Optimized rendering */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+
+  .headerFrame {
+    position: absolute;
+    width: 29.79vh;
+    height: 4.17vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.98vh 3.98vh 0 0;
+    background: rgba(83, 36, 36, 0);
+
+    .headerText {
+      position: absolute;
+      left: 2.78vh;
+      top: 1.07vh;
+      color: white;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 13.98vh;
+      z-index: 52;
+
+      .timeText {
+        width: 3.56vh;
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 1.20vh;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        line-height: normal;
+      }
+    }
+  }
+
+  .contentFrame {
+    width: 100%;
+    height: 100%;
+    border-radius: 4.34vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+
+    .homescreen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .closeAll {
+        margin-top: 3.56vh;
+        width: 5.33vh;
+        height: 2.13vh;
+        background-color: #535353af;
+        border-radius: 3.56vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+      }
+
+      .firstRow {
+        width: 26.02vh;
+        height: 14.63vh;
+        margin-top: 6.37vh;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+
+        .fourApps {
+          width: 10.63vh;
+          display: flex;
+          height: 13.52vh;
+          align-items: flex-start;
+          align-content: flex-start;
+          gap: 2.31vh 1.02vh;
+          flex-shrink: 0;
+          flex-wrap: wrap;
+          margin-left: 1.20vh;
+        }
+      }
+
+      .secondRow {
+        position: relative;
+        display: flex;
+        width: 25.33vh;
+        height: 22.98vh;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 2.27vh;
+        flex-wrap: wrap;
+        margin-top: 2.31vh;
+        transition: all 0.3s ease;
+      }
+
+      .thirdRow {
+        display: flex;
+        width: 25.96vh;
+        height: 6.20vh;
+        padding: 0.93vh;
+        align-items: center;
+        gap: 1.91vh;
+        flex-shrink: 0;
+        border-radius: 1.11vh;
+        position: relative;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(0.63vh);
+        margin-top: 6.67vh;
+      }
+    }
+
+    .lockscreen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      user-select: none;
+      background-image: url(../images/lockscreenBG.png);
+      background-size: cover;
+
+      .bottomButton {
+        width: 25.30vh;
+        height: 3.75vh;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 39.47vh;
+
+        .button1 {
+          width: 3.61vh;
+          height: 3.61vh;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.93vh;
+          border-radius: 17.78vh;
+          background: rgba(70, 70, 70, 0.66);
+          backdrop-filter: blur(0.19vh);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .startup {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 61;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(../images/startupBg.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+
+      .title1 {
+        width: 23.11vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 2.31vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.414%;
+        margin-top: 1.20vh;
+      }
+
+      .usabox {
+        width: 27.06vh;
+        height: 4.26vh;
+        flex-shrink: 0;
+        border-radius: 0.46vh;
+        margin-top: 2.22vh;
+        background: rgba(255, 255, 255, 0.31);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+          width: 8.89vh;
+          letter-spacing: 0.04vh;
+          height: 1.47vh;
+          flex-shrink: 0;
+          color: #FFF;
+          text-align: center;
+          font-family: "SFPro";
+          font-size: 1.32vh;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 119.414%;
+        }
+      }
+
+      .othertext {
+        width: 21.39vh;
+        height: 1.48vh;
+        flex-shrink: 0;
+        margin-top: 2.50vh;
+        margin-left: -3.20vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.67vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 119.414%;
+      }
+
+      .otherCountry {
+        display: flex;
+        width: 27.06vh;
+        height: 32.71vh;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+        margin-top: 3.06vh;
+        border-radius: 0.93vh 0.93vh 2.59vh 2.59vh;
+        background: rgba(255, 255, 255, 0.30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+
+        .text {
+
+          letter-spacing: 0.04vh;
+          height: 1.47vh;
+          flex-shrink: 0;
+          color: #FFF;
+          font-family: "SFPro";
+          font-size: 1.32vh;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 119.414%;
+        }
+      }
+
+      .mayTake {
+        width: 24.89vh;
+        height: 3.52vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.42vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.414%;
+      }
+
+      .unnderText {
+        position: absolute;
+        bottom: 2.96vh;
+        width: 28.44vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 0.98vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.414%;
+      }
+
+      .dataPrivytext {
+        width: 19.11vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 2.78vh;
+        font-style: normal;
+        font-weight: 700;
+        margin-top: 0.70vh;
+        line-height: 119.414%;
+      }
+
+      .inoftext {
+        width: 27.40vh;
+        height: 31.73vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.57vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 119.414%;
+        margin-top: 2.88vh;
+      }
+
+      .startupContinue {
+        display: flex;
+
+
+        border-radius: 0.37vh;
+        background: #1F53D8;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .learnMore {
+        color: #8CADFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.30vh;
+        margin-top: 1.39vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.414%;
+      }
+
+      .faceIdtext {
+        width: 10.67vh;
+        height: 3.34vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 3.14vh;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 119.414%;
+        margin-top: 0.84vh;
+      }
+
+      .faceidDesc {
+        width: 24.53vh;
+        height: 8.35vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.57vh;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 1.67vh;
+        line-height: 119.414%;
+      }
+
+      .pinPageTitle1 {
+        width: 28.22vh;
+        margin-top: 2.22vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 2.30vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .pinPageTitle2 {
+        width: 27.91vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.49vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 2.96vh;
+      }
+
+      .pinPageTitle3 {
+        width: 19.09vh;
+        height: 2.96vh;
+        margin-top: 2.69vh;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 1.49vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .smrtAccount {
+        color: #FFF;
+        font-family: Saira;
+        font-size: 2.22vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 1.68vh;
+      }
+
+      .smrDescription {
+        width: 24.28vh;
+        height: 3.92vh;
+        flex-shrink: 0;
+        color: #FFF;
+        margin-top: 0.84vh;
+        text-align: center;
+        font-size: 1.20vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .smrtDesc {
+        width: 25.56vh;
+        color: #FFF;
+        text-align: center;
+        font-family: "SFPro";
+        font-size: 0.73vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 119.414%;
+        margin-top: 0.32vh;
+      }
+
+    }
+
+    .NumberDialing {
+      display: flex;
+      width: 26.76vh;
+      height: 4.44vh;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.56vh;
+      flex-shrink: 0;
+      color: #FFF;
+      text-align: center;
+      font-family: "SFPro";
+      font-size: 3.70vh;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 5.09vh;
+    }
+
+    .speakerButton {
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .clickanimation {
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      /* Optimized rendering */
+      will-change: transform;
+      transform: translateZ(0);
+
+      &:active {
+        transform: scale(0.97) translateZ(0);
+      }
+    }
+
+    .message {
+      .Xsadsasa {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 0.28vh;
+        gap: 0.64vh;
+        width: 26.48vh;
+        height: 1.48vh;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+        .XSADAAA {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 1.20vh;
+          flex: none;
+          order: 1;
+          flex-grow: 1;
+          cursor: pointer;
+
+          .text {
+            width: 7.87vh;
+            height: 1.20vh;
+            font-weight: 400;
+            font-size: 1.30vh;
+            line-height: 1.20vh;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+          }
+
+          .readsada {
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            align-items: center;
+            justify-content: space-between;
+            width: 3.52vh;
+            height: 1.20vh;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+
+            .textX {
+              width: 1.85vh;
+              height: 1.20vh;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.20vh;
+              line-height: 1.20vh;
+              text-align: center;
+              letter-spacing: 0.03em;
+              color: rgba(255, 255, 255, 0.3);
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+            }
+          }
+        }
+      }
+
+      .topBar {
+        margin-top: 3.56vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .title {
+          font-family: 'SFPro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.67vh;
+          line-height: 1.67vh;
+          margin-left: 4.27vh;
+          text-align: center;
+          color: #FFFFFF;
+        }
+
+        .BackButton {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0px;
+          gap: 0.56vh;
+          margin-left: 1.78vh;
+
+          .text {
+            width: 3.70vh;
+            height: 1.67vh;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.39vh;
+            line-height: 1.67vh;
+            text-align: center;
+            color: #0A84FF;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          }
+        }
+      }
+
+      .messageContent {
+        display: flex;
+        width: 90%;
+        height: 51.56vh;
+        margin-top: 1.78vh;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.37vh;
+        flex-shrink: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .innerChannel {
+          display: flex;
+          width: 90%;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.56vh;
+
+          .channelContent {
+            display: flex;
+            width: 26.31vh;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-self: stretch;
+            cursor: pointer;
+
+            .messageCont {
+              display: flex;
+              width: 22.69vh;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-left: 0.89vh;
+
+              .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+
+                .name {
+                  color: #FFF;
+                  font-size: 1.39vh;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+
+                .timeStamp {
+                  display: flex;
+                  align-items: center;
+                  gap: 1.11vh;
+
+                  .text {
+                    color: rgba(255, 255, 255, 0.50);
+                    font-size: 1.11vh;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                  }
+                }
+              }
+
+              .description {
+                height: 2.31vh;
+                overflow: hidden;
+                
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 0.93vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                align-self: stretch;
+              }
+            }
+          }
+        }
+      }
+
+      .messageDetails {
+        width: 100%;
+
+        .headerbar {
+          width: 100%;
+          height: 10.67vh;
+          flex-shrink: 0;
+          border-radius: 3.98vh 3.98vh 0px 0px;
+          background: rgb(36, 36, 36);
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+
+          .headerMainCont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 2.31vh;
+
+
+            .name {
+              margin-top: 0.53vh;
+              min-width: 17.78vh;
+              color: #FFF;
+              text-align: center;
+              font-size: 1.57vh;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+        }
+
+        .sender {
+          background-color: #0A84FF;
+
+          right: 0;
+        }
+
+        .receiver {
+          background-color: #979797;
+
+          left: 0;
+        }
+
+        .inputSFsada {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 1.42vh;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .fuckerMessager {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+
+    .settings {
+      .card {
+        display: flex;
+        width: 26.76vh;
+        padding: 0.83vh 0.74vh;
+        align-items: center;
+        gap: 0.93vh;
+        border-radius: 0.46vh;
+        background: rgba(255, 255, 255, 0.12);
+        margin-left: 1.42vh;
+        margin-top: 1.24vh;
+
+        .NameAndBottoer {
+          display: flex;
+          width: 15.37vh;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.19vh;
+          flex-shrink: 0;
+
+          .name {
+            height: 2.03vh;
+            color: #FFF;
+            font-size: 1.85vh;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            width: 15.29vh;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.18vh;
+          }
+
+          .small {
+            align-self: stretch;
+            color: rgba(255, 255, 255, 0.50);
+            font-size: 1.11vh;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+
+        .right {
+          display: flex;
+          width: 1.48vh;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 0.93vh;
+          flex-shrink: 0;
+        }
+      }
+
+      .innerCont {
+        width: 26.76vh;
+        flex-shrink: 0;
+        border-radius: 0.46vh;
+        background: rgba(255, 255, 255, 0.12);
+        margin-left: 1.42vh;
+        margin-top: 2.67vh;
+        display: flex;
+        padding: 0.65vh 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.65vh;
+
+        .conta1 {
+          display: flex;
+          width: 24.91vh;
+          justify-content: space-between;
+          align-items: center;
+
+          .innerConta1 {
+            display: flex;
+            align-items: center;
+            gap: 1.00vh;
+            flex: 1 0 0;
+
+            .textConta {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1 0 0;
+
+              .text1 {
+                color: #FFF;
+                font-size: 1.39vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                align-self: stretch;
+              }
+
+              .text2 {
+                align-self: stretch;
+                color: rgba(255, 255, 255, 0.20);
+                font-size: 1.02vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+
+      .soundheader {
+        margin-top: 4.09vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 3.02vh;
+        margin-left: 1.07vh;
+
+        .back {
+          display: flex;
+          align-items: center;
+          padding: 0px;
+          gap: 0.56vh;
+          width: 4.17vh;
+          height: 1.76vh;
+        }
+
+        .name {
+          width: 14.35vh;
+          height: 1.76vh;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.57vh;
+          line-height: 1.76vh;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+        }
+      }
+
+      .mantine-Slider-track::before {
+        background-color: #454545 !important;
+      }
+
+      .cancelButton {
+        display: flex;
+        width: 25.93vh;
+        padding: 0.93vh 0px 0.83vh 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.56vh;
+        background: #373737;
+        color: #FF3E41;
+        text-align: center;
+        font-size: 1.85vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+      .inputPage {
+        width: 25.93vh;
+        height: 8.33vh;
+        margin-bottom: 0.89vh;
+        flex-shrink: 0;
+        border-radius: 0.56vh;
+        background: #373737;
+
+        .title {
+          color: #ffffff;
+          text-align: center;
+          font-size: 1.57vh;
+          margin-top: 0.71vh;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .Dsadsadsa {
+          ::placeholder {
+            color: #ffffff;
+            letter-spacing: 0.09vh;
+            font-size: 1.40vh;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+
+      .contasa {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1.78vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+
+      .mainMailBox {
+        display: flex;
+        width: 27.69vh;
+        max-height: 5.56vh;
+        overflow: hidden;
+        align-items: flex-start;
+        gap: 0.46vh;
+        cursor: pointer;
+
+        .mailsemiContainer {
+          display: flex;
+          padding: 0px 0.09vh;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.09vh;
+          flex: 1 0 0;
+
+          .titleCont {
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+
+            .title {
+              width: 14.06vh;
+              color: #FFF;
+              font-size: 1.39vh;
+              font-style: normal;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.05vh;
+            }
+
+            .dateTime {
+              display: flex;
+              width: 9.28vh;
+              justify-content: end;
+              align-items: center;
+              gap: 0.28vh;
+              color: #5E5E5E;
+              text-align: right;
+              font-size: 1.11vh;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.04vh;
+            }
+          }
+
+          .description {
+            align-self: stretch;
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 1.02vh;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.02vh;
+          }
+        }
+      }
+
+      .mailMessageheader {
+        display: flex;
+        width: 27.78vh;
+        align-items: flex-start;
+        gap: 0.65vh;
+
+        .semicontexsa {
+          display: flex;
+          padding: 0px 0.09vh;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.09vh;
+          flex: 1 0 0;
+
+          .titleCont {
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+
+            .title {
+              width: 14.98vh;
+              color: #FFF;
+              font-size: 1.39vh;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.05vh;
+            }
+
+            .timestamp {
+              display: flex;
+              width: 8.35vh;
+              align-items: center;
+              gap: 0.28vh;
+
+              .treasa {
+                width: 8.35vh;
+                flex-shrink: 0;
+                color: #5E5E5E;
+                text-align: right;
+                font-size: 1.20vh;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.04vh;
+              }
+            }
+          }
+
+          .toCont {
+            display: flex;
+            height: 1.20vh;
+            align-self: stretch;
+            color: #FFF;
+            font-size: 1.11vh;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.04vh;
+
+            .toEmail {
+              color: rgba(255, 255, 255, 0.4);
+              font-size: 1.11vh;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.04vh;
+            }
+          }
+        }
+      }
+
+      .mailMessageBody {
+        width: 27.78vh;
+        max-height: 80%;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      .headerOfComposeMail {
+        display: flex;
+        width: 25.88vh;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0.89vh;
+
+        .cancelBut {
+          color: #0A84FF;
+          font-size: 1.39vh;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+
+      .headerOfComposeMailx {
+        display: flex;
+        width: 26.59vh;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 1.78vh;
+
+        .cancelBut {
+          color: #0A84FF;
+          font-size: 1.39vh;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .composeMailTitle {
+          width: 22.69vh;
+          color: #FFF;
+          font-size: 2.31vh;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+
+      .composeMailContent {
+        width: 26.59vh;
+        max-height: 83%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 1.07vh;
+
+        .composeMailData {
+          .toMail {
+            display: flex;
+            align-items: center;
+
+            .title {
+              color: rgba(255, 255, 255, 0.40);
+              font-size: 1.39vh;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+
+            .inputSsd {
+              ::placeholder {
+                color: #ffffff;
+                letter-spacing: 0.09vh;
+                font-size: 1.40vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+
+              font-weight: 500;
+              width: 24.00vh;
+              color: #ffffff;
+              background-color: #0a84ff00;
+              outline: none;
+              border: none;
+            }
+          }
+        }
+      }
+
+      .appstore {
+        display: flex;
+        width: 27.78vh;
+        height: 50.93vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.93vh;
+        flex-shrink: 0;
+        margin-left: 1.07vh;
+        margin-top: 0.89vh;
+
+        .appStoreBox {
+          display: flex;
+          padding: 0.83vh 0.28vh;
+          align-items: center;
+          gap: 2.13vh;
+          align-self: stretch;
+
+          .installIcons {
+            display: flex;
+            width: 5.33vh;
+            height: 2.13vh;
+            padding: 0.09vh 0.65vh;
+            justify-content: center;
+            align-items: center;
+            gap: 0.93vh;
+            border-radius: 0.37vh;
+            background: #5c5c5c;
+            color: #E8F3FF;
+            text-align: center;
+            font-size: 1.11vh;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.07vh;
+          }
+
+          .appStoreDetails {
+            display: flex;
+            align-items: center;
+            gap: 0.56vh;
+            flex: 1 0 0;
+
+            .appStoreDetailsTexts {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1 0 0;
+
+              .titles {
+                align-self: stretch;
+                color: #FFF;
+                font-size: 1.57vh;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.09vh;
+              }
+
+              .descriptions {
+                align-self: stretch;
+                color: #9C9C9C;
+                font-size: 1.02vh;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.06vh;
+              }
+            }
+          }
+        }
+      }
+
+      .wallet-header {
+        display: flex;
+        height: 1.57vh;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.30vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.41vh;
+      }
+
+      .wallet-subheader {
+        align-self: stretch;
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 2.31vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.41vh;
+      }
+    }
+
+    .company {
+      display: flex;
+      width: 27.78vh;
+      height: 46.48vh;
+      margin-left: 1.07vh;
+      margin-top: 1.42vh;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.46vh;
+      flex-shrink: 0;
+      overflow-y: auto;
+
+      .containerXSa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.56vh;
+        align-self: stretch;
+
+        .innerContXassda {
+          display: flex;
+          width: 27.78vh;
+          align-items: center;
+          gap: 0.37vh;
+
+          .moreInnerContX {
+            display: flex;
+            width: 18.31vh;
+            align-items: center;
+            gap: 0.74vh;
+            flex-shrink: 0;
+
+            .moreInnerContX2 {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.28vh;
+              flex: 1 0 0;
+
+              .title {
+                color: #FFF;
+                font-size: 1.39vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 118.596%;
+                letter-spacing: 0.03vh;
+              }
+
+              .text {
+                color: #545454;
+                text-align: center;
+                font-size: 1.20vh;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 118.596%;
+                letter-spacing: 0.03vh;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .backButton {
+    width: 15.74vh;
+    height: 0.46vh;
+    flex-shrink: 0;
+    border-radius: 0.65vh;
+    background: #D9D9D9;
+    position: absolute;
+    bottom: 0.71vh;
+    margin-left: 0.36vh;
+    z-index: 49;
+    cursor: pointer;
+  }
+
+  .divider {
+    width: 26.76vh;
+    height: 0.05vh;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 0.83vh;
+  }
+
+  .myCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 0.83vh;
+    margin-top: 1.19vh;
+    width: 26.76vh;
+    height: 4.17vh;
+
+    .details {
+      display: flex;
+
+      flex-direction: column;
+      align-items: flex-start;
+      flex-shrink: 0;
+
+      .FullName {
+        align-self: stretch;
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 1.85vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 118.596%;
+        letter-spacing: 0.06vh;
+      }
+
+      .mydsa {
+        align-self: stretch;
+        color: rgba(255, 255, 255, 0.30);
+        font-family: "SFPro";
+        font-size: 1.10vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 118.745%;
+        letter-spacing: 0.05vh;
+      }
+    }
+
+  }
+
+  .phoneContacts {
+    display: flex;
+    width: 25.65vh;
+    height: 38.43vh;
+    padding: 0.09vh 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.19vh;
+    flex-shrink: 0;
+    margin-top: 1.42vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .letter {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+    }
+  }
+
+  .savedContactTop {
+    width: 29.81vh;
+    height: 25.00vh;
+    flex-shrink: 0;
+    border-radius: 3.98vh 3.98vh 0px 0px;
+    background: linear-gradient(180deg, #4E4F54 0%, #282B34 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topButtons {
+      width: 27.78vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      gap: 18.98vh;
+      margin-top: 3.73vh;
+    }
+
+    .savedFullName {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1.13vh;
+
+      .text {
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 2.78vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .bottomButton {
+      display: flex;
+      width: 25.74vh;
+      justify-content: center;
+      align-items: center;
+      gap: 0.71vh;
+      margin-top: 1.07vh;
+    }
+  }
+
+  .savedPhoneNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.65vh 1.30vh;
+    gap: 0.28vh;
+    width: 27.59vh;
+    height: 4.88vh;
+    margin-top: 2.22vh;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.65vh;
+
+    .title {
+      width: 23.15vh;
+
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.20vh;
+      line-height: 1.02vh;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+
+    .number {
+      width: 23.15vh;
+      margin-top: 0.71vh;
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.38vh;
+      line-height: 1.02vh;
+      color: #0A84FF;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+  }
+
+  .savedPhoneNumberx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.65vh 1.30vh;
+    gap: 0.28vh;
+    width: 27.59vh;
+    height: 4.88vh;
+    margin-top: 1.42vh;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 0.65vh;
+
+    .title {
+      width: 23.15vh;
+
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.20vh;
+      line-height: 1.02vh;
+      color: #FFFFFF;
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+
+    .number {
+      width: 23.15vh;
+      margin-top: 0.71vh;
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.38vh;
+      line-height: 1.02vh;
+      color: #0A84FF;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+  }
+
+  .save-or-edit-top-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    width: 25.37vh;
+    height: 1.20vh;
+    margin-top: 0.89vh;
+
+    .cancel {
+
+      height: 1.20vh;
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.11vh;
+      line-height: 1.20vh;
+      color: #0D73D9;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
+    .newContact {
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.11vh;
+      line-height: 1.20vh;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    .done {
+
+      height: 1.20vh;
+      font-family: 'SFPro';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.11vh;
+      line-height: 1.20vh;
+      color: #0D73D9;
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+    }
+  }
+
+}
+
+.searchbar {
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.circleFillers {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.11vh;
+}
+
+.dialpad1 {
+  display: flex;
+  width: 29.79vh;
+  user-select: none;
+  height: 18.89vh;
+  padding: 0.56vh 0.09vh;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.20vh;
+  flex-shrink: 0;
+  margin-top: 7.11vh;
+  background: rgba(255, 255, 255, 0.30);
+  flex-wrap: wrap;
+
+  .button {
+    display: flex;
+    width: 8.30vh;
+    height: 2.95vh;
+    padding: 0.09vh 1.94vh;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.28vh;
+    background: rgba(255, 255, 255, 0.80);
+
+    .text {
+      display: flex;
+      height: 1.60vh;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      align-self: stretch;
+      color: #000;
+      text-align: center;
+      font-family: "SFPro";
+      font-size: 1.37vh;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .text2 {
+      height: 0.65vh;
+      flex-shrink: 0;
+      align-self: stretch;
+      color: #000;
+      width: 4.53vh;
+      text-align: center;
+      font-family: "SFPro";
+      font-size: 0.76vh;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 119.419%;
+      letter-spacing: 0.10vh;
+    }
+  }
+}
+
+.DialpadV3 {
+  display: flex;
+  width: 23.47vh;
+  height: 35.65vh;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.94vh;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.fotterNavigation {
+  display: inline-flex;
+  width: 100%;
+  height: 6.19vh;
+  justify-content: center;
+  align-items: start;
+  border-radius: 0px 0px 3.98vh 3.98vh;
+  background: #1A1A1A;
+  position: absolute;
+  bottom: 0;
+
+  .innerContx {
+    margin-top: 1.07vh;
+    display: flex;
+    align-items: center;
+    gap: 3.02vh;
+
+  }
+
+  .hoverhere {
+    cursor: pointer;
+
+    path {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      path {
+        transition: all 0.3s ease;
+        fill: #0A84FF;
+      }
+
+    }
+  }
+
+  .hoverhereX {
+    cursor: pointer;
+
+    path {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      path {
+        transition: all 0.3s ease;
+        stroke: #0A84FF;
+      }
+
+    }
+  }
+}
+
+.mantine-Autocomplete-option {
+  &:hover {
+    background: #cacaca1e;
+  }
+}
+.mantine-Select-option {
+  &:hover {
+    background: #cacaca1e;
+  }
+}
+
+.notiFicationCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.56vh;
+  flex-shrink: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .notiRegisterar {
+    display: flex;
+    padding: 0.93vh 1.02vh;
+    align-items: center;
+    align-content: center;
+    gap: 0.93vh;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 1.48vh;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 0.37vh 0.09vh rgba(0, 0, 0, 0.20);
+
+    .notiXrt {
+      display: flex;
+      width: 18.61vh;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .notiXtitle {
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 1.30vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .notiXDescription {
+        color: #FFF;
+        font-family: "SFPro";
+        font-size: 0.93vh;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.controlSliders {
+  height: 100%;
+  width: 4.81vh;
+  background: rgba(0, 0, 0, 0.42);
+  border-radius: 1.67vh;
+  position: relative;
+  overflow: hidden;
+  pointer-events: all;
+}
+
+.opacityAnimation {
+  animation: beat 2s infinite;
+}
+
+@keyframes beat {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.swiper {
+
+  width: 29.63vh;
+  height: 22.22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.04vh;
+  font-weight: bold;
+  color: #fff;
+}
+
+.dialpadV2 {
+  display: flex;
+  width: 21.67vh;
+  height: 28.80vh;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.94vh;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+
+  .dialpadV2button {
+    display: flex;
+    width: 5.56vh;
+    height: 5.56vh;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: rgba(144, 144, 144, 0.40);
+    cursor: pointer;
+
+    .text1 {
+      display: flex;
+      width: 0.65vh;
+      height: 3.89vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      color: #FFF;
+
+      font-family: "SFPro";
+      font-size: 2.31vh;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .text2 {
+      color: #FFF;
+      text-align: center;
+      font-family: "SFPro";
+      font-size: 0.93vh;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.24vh;
+      margin-left: 0.53vh;
+      margin-top: -0.43vh;
+    }
+  }
+
+  .dialpadV2button1 {
+    display: flex;
+    width: 5.56vh;
+    height: 5.56vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.93vh;
+    flex-shrink: 0;
+    border-radius: 9.26vh;
+    background: rgba(144, 144, 144, 0.40);
+
+    .text3 {
+      display: flex;
+      width: 1.78vh;
+      height: 5.56vh;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #FFF;
+      text-align: center;
+      font-family: "SFPro";
+      font-size: 2.31vh;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+
+.emeButtons {
+  width: 21.20vh;
+  height: 1.67vh;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+
+  .text1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "SFPro";
+    font-size: 1.39vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.testHoverWithButton {
+  transition: all 0.3s ease;
+
+  rect {
+    transition: all 0.3s ease;
+  }
+
+  path {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    rect {
+      transition: all 0.3s ease;
+      fill: #ffffffad;
+      fill-opacity: 1;
+    }
+
+    path {
+      transition: all 0.3s ease;
+      fill: black;
+    }
+  }
+
+}
+
+.clickButton {
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.clickanimation {
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+    .clickanimationXl {
+      cursor: pointer;
+      /* Optimized rendering */
+      will-change: transform;
+      transform: translateZ(0);
+
+      &:active {
+        transform: scale(0.9) translateZ(0);
+      }
+    }
+
+.iconName {
+  color: #FFF;
+  text-align: center;
+  font-family: "SFPro";
+  font-size: 0.93vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.48vh;
+}
+
+.pushNotiFication {
+  display: flex;
+  width: 27.59vh;
+  padding: 0.74vh 2.13vh 0.83vh 1.20vh;
+  align-items: center;
+  gap: 0.74vh;
+  border-radius: 4.07vh;
+  background: #0B0B0B;
+
+
+  .contextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.09vh;
+    flex: 1 0 0;
+
+    .title {
+      width: 14.30vh;
+
+      color: #FFF;
+      font-family: "SFPro";
+      font-size: 1.30vh;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .description {
+      width: 14.30vh;
+      margin-top: 0.11vh;
+      color: #575757;
+      font-family: "SFPro";
+      font-size: 1.02vh;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+.customSwitch {
+  width: 2.78vh;
+  height: 1.85vh;
+  background: #787880;
+  border-radius: 9.26vh;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .thumb {
+    width: 1.48vh;
+    height: 1.48vh;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 0.09vh rgba(0, 0, 0, 0.04), 0px 0.28vh 0.74vh rgba(0, 0, 0, 0.15), 0px 0.28vh 0.09vh rgba(0, 0, 0, 0.06);
+    border-radius: 100%;
+  }
+}
+
+.pushActionNotiFication {
+  display: flex;
+  width: 27.59vh;
+  padding: 0.74vh 2.13vh 0.83vh 1.20vh;
+  align-items: center;
+  gap: 0.74vh;
+  border-radius: 4.07vh;
+  background: #0B0B0B;
+
+  .contextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.09vh;
+    flex: 1 0 0;
+
+    .title {
+      width: 14.30vh;
+      color: #FFF;
+      font-family: "SFPro";
+      font-size: 1.30vh;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .description {
+      width: 14.30vh;
+      margin-top: 0.11vh;
+      color: #575757;
+      font-family: "SFPro";
+      font-size: 1.02vh;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+.pushActionNotiFication1 {
+  display: flex;
+  width: 27.59vh;
+  padding: 0.74vh 2.13vh 0.83vh 1.20vh;
+  align-items: center;
+  gap: 0.74vh;
+  border-radius: 4.07vh;
+  background: #0B0B0B;
+
+  .contextArea {
+    display: flex;
+    width: 17.91vh;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.09vh;
+    flex-shrink: 0;
+
+    .title {
+      width: 19.69vh;
+      color: #FFF;
+      font-family: "SFPro";
+      font-size: 1.30vh;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .description {
+      width: 14.35vh;
+      color: #575757;
+      font-family: "SFPro";
+      font-size: 1.02vh;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.00vh;
+}
+
+.vibrateAnimation {
+  animation: vibrate 0.3s infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(0.27vh);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(-0.27vh);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+.swipeinleft-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.swipeinleft-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 250ms ease-in, opacity 250ms ease-in;
+}
+
+.swipeinleft-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swipeinleft-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in, opacity 250ms ease-in;
+}
+
+.enterandexitfromtop-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.enterandexitfromtop-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 450ms, opacity 450ms;
+}
+
+.enterandexitfromtop-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.enterandexitfromtop-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 450ms, opacity 450ms;
+}
+
+.popDown-enter {
+  opacity: 0;
+  transform: scale(0.8);
+  /* Start smaller and off-screen */
+  transition: transform 450ms linear, opacity 450ms linear;
+}
+
+.popDown-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  /* Grow to full size */
+  transition: transform 450ms linear, opacity 450ms linear;
+}
+
+.popDown-exit {
+  opacity: 1;
+  transform: scale(1);
+  /* Start at full size */
+  transition: transform 450ms linear, opacity 450ms linear;
+}
+
+.popDown-exit-active {
+  opacity: 0;
+  transform: scale(0.8);
+  /* Shrink and move off-screen */
+  transition: transform 450ms linear, opacity 450ms linear;
+}
