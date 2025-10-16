@@ -27,5 +27,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Install web dependencies
+        run: pnpm --dir web install --frozen-lockfile
+
       - name: Build project
         run: pnpm build
