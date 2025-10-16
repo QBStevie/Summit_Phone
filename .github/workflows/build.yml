@@ -22,6 +22,8 @@ jobs:
             pnpm-lock.yaml
             web/pnpm-lock.yaml
 
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
