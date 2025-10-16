@@ -22,11 +22,6 @@ jobs:
             pnpm-lock.yaml
             web/pnpm-lock.yaml
 
-      - name: Enable Corepack
-        run: corepack enable
-
-      - name: Activate pnpm 9
-        run: corepack prepare pnpm@9 --activate
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
